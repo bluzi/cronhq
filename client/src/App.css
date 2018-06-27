@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200');
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Fira Sans';
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  padding: 50px 20%;
+  text-align: left;
+  margin-top: 500px;
+  transform: translateY(-50%);
+}
+
+footer {
+  margin-top: 200px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer svg,
+footer a {
+  color: #9b4dca;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  opacity: 0.9;
+  color: #9b4dca;
+}
+
+header {
+  margin: 0 auto;
+  padding: 20px 20%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+header a.logo {
+  font-family: "Leckerli One";
+  font-size: 20px;
+  color: #9b4dca;
+  text-decoration: none;
+}
+
+header .separator {
+  margin: 0 auto;
+}
+
+header nav {
+  margin: 0 20px;
+}
+
+header nav a {
+  margin: 0 10px;
+}
+
+header .github-link {
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: -.1rem;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #606C76;
+  font-family: 'Fira Sans';
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: -.1rem;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #606C76;
+  font-family: 'Fira Sans';
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -.1rem;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(147, 157, 165);
+  font-family: 'Fira Sans';
+}
+
+.controllers {
+  display: flex;
+  justify-content: center;
+  max-height: 36px;
+}
+
+.controllers .text {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+  font-weight: 300;
+}
+
+button, a.button {
+    font-family: Arial;  
+    background-color: #9b4dca;
+    border: 2px solid #9b4dca;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    padding: 9px 50px;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    font-size: 0.75rem;
+    transition: all 0.3s ease;    
+}
+
+button:hover, button:focus,
+a.button:hover a.button:focus {
+  opacity: 0.7;
+  outline: none;
+  background-color: white;
+  color: #9b4dca;
+  cursor: pointer;
+  max-height: 36px;
+}
+
+.controllers input[type="text"] {
+  width: 400px;
+  margin: 0px 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #666;
+  background-color: white;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  height: 100%;
+  font-family: "Fira Sans";
+  max-height: 36px;
+}
+
+.controllers input[type="text"]:focus {
+  border-color: #9b4dca;
+  outline: 0;
+}
+
+.controllers input[type="text"].small {
+  width: 200px;
+}
+
+.bigtext {
+  font-size: 25px;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+}
+
+a.underline:hover {
+  border-bottom-color: #9b4dca;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 20%;
+  text-align: left;
+  position: absolute;
+}
+
+.container h2 {
+  font-size: 30px;
+  text-align: left;
+}
+/* 
+@media screen and (max-width: 1200px) {
+  header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .controllers {
+    justify-content ;
+  }
+
+  .controllers .text {
+  }
+
+  .controllers > div, .controllers > input, .controllers button {
+    margin-top: 20px;
+    display: block;
+  }
+
+  footer {
+    display: none;
+  }
+} */
