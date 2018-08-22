@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200');
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+
+$primary: #9b4dca;
+$text-color: #666;
+$title-color: #606C76;
+$background-color: #FAFAFA; 
+$font-family: 'Fira Sans';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font-family: $font-family;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  padding: 50px 20%;
+  text-align: left;
+  margin-top: 500px;
+  transform: translateY(-50%);
+}
+
+footer {
+  margin-top: 200px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+
+  svg, a {
+    color: $primary;
+    fill: $primary;
+    margin: 0 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover {
+    opacity: 0.9;
+    color: $primary;
+  }
+}
+
+header {
+  margin: 0 auto;
+  padding: 20px 20%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.02);
+
+  a.logo {
+    font-family: "Leckerli One";
+    font-size: 20px;
+    color: $primary;
+    text-decoration: none;
+  }
+
+  .separator {
+    margin: 0 auto;
+  }
+
+  nav {
+    margin: 0 20px;
+
+    a {
+      margin: 0 10px;
+    }
+  }
+
+  .github-link {
+    margin-left: 20px;
+  }
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: -.1rem;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: $title-color;
+  font-family: $font-family;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: -.1rem;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: $title-color;
+  font-family: $font-family;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -.1rem;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: $title-color;
+  font-family: $font-family;
+}
+
+button, a.button {
+    font-family: Arial;  
+    background-color: $primary;
+    border: 2px solid $primary;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    padding: 9px 50px;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    font-size: 0.75rem;
+    transition: all 0.3s ease;    
+
+    &:hover, &:focus {
+      opacity: 0.7;
+      outline: none;
+      background-color: white;
+      color: $primary;
+      cursor: pointer;
+      max-height: 36px;
+    }
+}
+
+.controllers {
+  display: flex;
+  justify-content: center;
+  max-height: 36px;
+
+  .text {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    font-weight: 300;
+  }
+
+  input[type="text"], input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    width: 400px;
+    margin: 0px 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: $text-color;
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    height: 100%;
+    font-family: $font-family;
+    max-height: 36px;
+
+    &:focus {
+      border-color: $primary;
+      outline: 0;
+    }
+
+    &.small {
+      width: 200px;
+    }
+  }
+}
+
+.bigtext {
+  font-size: 25px;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+}
+
+a.underline:hover {
+  border-bottom-color: $primary;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 20%;
+  text-align: left;
+  position: absolute;
+
+  h2 {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+.result-bar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.success {
+  color: rgb(103, 226, 66)
+}
+
+.error {
+  color: rgb(228, 66, 66)
+}
+
+/* 
+@media screen and (max-width: 1200px) {
+  header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .controllers {
+    justify-content ;
+  }
+
+  .controllers .text {
+  }
+
+  .controllers > div, .controllers > input, .controllers button {
+    margin-top: 20px;
+    display: block;
+  }
+
+  footer {
+    display: none;
+  }
+} */

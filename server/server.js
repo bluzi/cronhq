@@ -1,11 +1,12 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const apiRoutes = require('./routes/api.routes');
 const cron = require('./cron');
 const logger = require('./logger');
 
 const app = express()
-const port = process.env.port || 3000;
+const port = process.env.port || 3001;
 
 (async () => {
     await cron.start();
@@ -16,6 +17,7 @@ const port = process.env.port || 3000;
     });
 
     app.use(bodyParser.json());
+    app.use(cors());
 
     app.use(apiRoutes);
 

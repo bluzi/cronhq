@@ -5,7 +5,7 @@ export default class AboutPage extends Component {
         return (
             <main>
                 <h1>Hello</h1>
-                <div class="bigtext">
+                <div className="bigtext">
                     <p>
                         My name is Eliran Pe'er, I am a web developer. <br />
                         I made CronHQ for the community, out of my own pure need. <br />

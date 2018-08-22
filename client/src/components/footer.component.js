@@ -6,7 +6,7 @@ export default class Footer extends Component {
         return (
             <footer>
                 Made with
-                <Ionicon icon="md-heart" color="#9b4dca" /> By
+                <Ionicon icon="md-heart" /> By
                 <a href="https://www.github.com/bluzi" rel="noopener noreferrer" target="_blank">@bluzi</a>
             </footer>
         );

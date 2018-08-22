@@ -6,7 +6,6 @@ const router = express.Router();
 
 router.post('/', (req, res) => {
     const time = new Date().getTime();
-    console.log(req.body);
     const { url, interval } = req.body;
 
     if (!url || !interval || isNaN(parseInt(interval))) {

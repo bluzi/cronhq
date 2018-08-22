@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import StartJobPage from './components/start-job-page.component';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NotFoundPage from './components/not-found-page.component';

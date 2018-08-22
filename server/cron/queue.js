@@ -6,6 +6,7 @@ class Queue {
     }
 
     get(time) {
+        console.log(this.queue);
         return this.queue[this.scaleTime(time)] || [];
     }
 

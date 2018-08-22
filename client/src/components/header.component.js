@@ -6,13 +6,13 @@ export default class Header extends Component {
     render() {
         return (
             <header>
-                <a href="/" class="logo">CronHQ.io</a>
+                <a href="/" className="logo">CronHQ.io</a>
 
-                <div class="separator"></div>
+                <div className="separator"></div>
 
                 <nav>
                     <Link to="/">Home</Link>
-                    <a href="https://www.jsonstore.io" class="underline" rel="noopener noreferrer" target="_blank">jsonstore.io</a>
+                    <a href="https://www.jsonstore.io" className="underline" rel="noopener noreferrer" target="_blank">jsonstore.io</a>
                     <Link to="/terms">Terms of Use</Link>
                     <Link to="/about">About</Link>
                 </nav>
@@ -27,7 +27,7 @@ export default class Header extends Component {
                 </Switch>
 
 
-                <a href="https://github.com/bluzi/cronhq" rel="noopener noreferrer" target="_blank" class="github-link">
+                <a href="https://github.com/bluzi/cronhq" rel="noopener noreferrer" target="_blank" className="github-link">
                     <Ionicon icon="logo-github" color="#666" fontSize="30px" />
                 </a>
             </header>

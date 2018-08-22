@@ -1,6 +1,6 @@
 const Jsonstore = require('jsonstore.io');
 
-const token = process.env.token || '099a07fe85118ae91ea392ea8cbdbe33222a59ff6139eb626e05caa76d4033bb';
+const token = process.env.token || 'b0685daeb580c12b16cb037a1e4ecfcb0addece47c14c776061c0582b359a76f';
 
 if (!token) throw new Error('Could not find jsonstore key');
 const store = new Jsonstore(token);
@@ -13,7 +13,7 @@ const database = {
 
     createJob({ url, interval }) {
         const encodedUrl = this.encodeUrl(url);
-        return store.write(`jobs/${encodedUrl}`, interval);
+        return store.write(`jobs/${encodedUrl}`, parseInt(interval));
     },
 
     removeJob({ url }) {

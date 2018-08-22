@@ -26,13 +26,13 @@ export default class StopJobPage extends Component {
         return (
             <main>
                 <h2>Stop a Job</h2>
-                <div class="controllers">
-                    <div class="text">Enter URL to stop job for</div>
+                <div className="controllers">
+                    <div className="text">Enter URL to stop job for</div>
                     
                     <Tooltip title={urlTooltipText} animation="perspective" position="bottom" open={this.state.focusedElement === 'url'}>
                         <input 
                             type="text" 
-                            spellcheck="false"
+                            spellCheck="false"
                             placeholder="https://www.example.com"
                             onFocus={() => this.setFocusedElement('url')} 
                             onBlur={() => this.setFocusedElement()} 

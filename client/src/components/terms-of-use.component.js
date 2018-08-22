@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class TermsOfUsePage extends Component {
     render() {
         return (
-            <div class="container">
+            <div className="container">
                 <h2>Welcome to CronHQ</h2>
                 <p>These terms and conditions outline the rules and regulations for the use of CronHQ's Website.</p> <br />
                 <p>By accessing this website we assume you accept these terms and conditions in full. Do not continue to use CronHQ's website
